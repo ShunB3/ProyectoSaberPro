@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/assets/img/plan-list-svgrepo-com.svg" />
+    <link rel="icon" href="/assets/img/leon.png" />
     <title>Inicio - Icfes-coordinador</title>
     <style>
         /* General Resets */
@@ -173,8 +173,8 @@
                     <strong>Saber Pro Nivel:</strong> <span th:text="${estudiante.nivel_puntaje}"></span>
                 </div>
                 <div class="card-row">
-                    <a th:href="@{'/coordinador/editar/' + ${estudiante.cedula}}" class="edit-btn">Editar</a>
-                    <a th:href="@{'/coordinador/borrar/' + ${estudiante.cedula}}" class="delete-btn">Borrar</a>
+                    <a th:href="@{'/coordinador/editar/' + ${estudiante.registro}}" class="edit-btn">Editar</a>
+                    <a th:href="@{'/coordinador/borrar/' + ${estudiante.registro}}" class="delete-btn">Borrar</a>
                 </div>
             </div>
         </div>
